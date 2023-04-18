@@ -12,6 +12,10 @@
 		5595FC7F29EEF16A0087FF74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5595FC7E29EEF16A0087FF74 /* Assets.xcassets */; };
 		5595FC8229EEF16A0087FF74 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5595FC8129EEF16A0087FF74 /* Preview Assets.xcassets */; };
 		5595FC8929EEF1EA0087FF74 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5595FC8829EEF1EA0087FF74 /* ViewModel.swift */; };
+		5595FCBA29EF47960087FF74 /* stepCounterWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5595FCB929EF47960087FF74 /* stepCounterWatchApp.swift */; };
+		5595FCBC29EF47960087FF74 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5595FCBB29EF47960087FF74 /* ContentView.swift */; };
+		5595FCBE29EF47970087FF74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5595FCBD29EF47970087FF74 /* Assets.xcassets */; };
+		5595FCC129EF47970087FF74 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5595FCC029EF47970087FF74 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +26,23 @@
 		5595FC8129EEF16A0087FF74 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5595FC8829EEF1EA0087FF74 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		5595FC8A29EEF3EE0087FF74 /* stepCounter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = stepCounter.entitlements; sourceTree = "<group>"; };
+		5595FCB729EF47960087FF74 /* stepCounterWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "stepCounterWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5595FCB929EF47960087FF74 /* stepCounterWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stepCounterWatchApp.swift; sourceTree = "<group>"; };
+		5595FCBB29EF47960087FF74 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5595FCBD29EF47970087FF74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5595FCC029EF47970087FF74 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5595FCC529EF49D40087FF74 /* StepCounterModule */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = StepCounterModule; path = ../StepCounterModule; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5595FC7429EEF1680087FF74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5595FCB429EF47960087FF74 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,7 +55,9 @@
 		5595FC6E29EEF1680087FF74 = {
 			isa = PBXGroup;
 			children = (
+				5595FCC529EF49D40087FF74 /* StepCounterModule */,
 				5595FC7929EEF1680087FF74 /* stepCounter */,
+				5595FCB829EF47960087FF74 /* stepCounterWatch Watch App */,
 				5595FC7829EEF1680087FF74 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				5595FC7729EEF1680087FF74 /* stepCounter.app */,
+				5595FCB729EF47960087FF74 /* stepCounterWatch Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,6 +92,25 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		5595FCB829EF47960087FF74 /* stepCounterWatch Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				5595FCB929EF47960087FF74 /* stepCounterWatchApp.swift */,
+				5595FCBB29EF47960087FF74 /* ContentView.swift */,
+				5595FCBD29EF47970087FF74 /* Assets.xcassets */,
+				5595FCBF29EF47970087FF74 /* Preview Content */,
+			);
+			path = "stepCounterWatch Watch App";
+			sourceTree = "<group>";
+		};
+		5595FCBF29EF47970087FF74 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5595FCC029EF47970087FF74 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -92,6 +131,23 @@
 			productReference = 5595FC7729EEF1680087FF74 /* stepCounter.app */;
 			productType = "com.apple.product-type.application";
 		};
+		5595FCB629EF47960087FF74 /* stepCounterWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5595FCC429EF47970087FF74 /* Build configuration list for PBXNativeTarget "stepCounterWatch Watch App" */;
+			buildPhases = (
+				5595FCB329EF47960087FF74 /* Sources */,
+				5595FCB429EF47960087FF74 /* Frameworks */,
+				5595FCB529EF47960087FF74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "stepCounterWatch Watch App";
+			productName = "stepCounterWatch Watch App";
+			productReference = 5595FCB729EF47960087FF74 /* stepCounterWatch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -103,6 +159,9 @@
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					5595FC7629EEF1680087FF74 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					5595FCB629EF47960087FF74 = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
 				};
@@ -121,6 +180,7 @@
 			projectRoot = "";
 			targets = (
 				5595FC7629EEF1680087FF74 /* stepCounter */,
+				5595FCB629EF47960087FF74 /* stepCounterWatch Watch App */,
 			);
 		};
 /* End PBXProject section */
@@ -135,6 +195,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5595FCB529EF47960087FF74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5595FCC129EF47970087FF74 /* Preview Assets.xcassets in Resources */,
+				5595FCBE29EF47970087FF74 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -145,6 +214,15 @@
 				5595FC7D29EEF1680087FF74 /* ContentView.swift in Sources */,
 				5595FC8929EEF1EA0087FF74 /* ViewModel.swift in Sources */,
 				5595FC7B29EEF1680087FF74 /* stepCounterApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5595FCB329EF47960087FF74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5595FCBC29EF47960087FF74 /* ContentView.swift in Sources */,
+				5595FCBA29EF47960087FF74 /* stepCounterWatchApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +405,66 @@
 			};
 			name = Release;
 		};
+		5595FCC229EF47970087FF74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"stepCounterWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = ZTXUGF93M7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = stepCounterWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		5595FCC329EF47970087FF74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"stepCounterWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = ZTXUGF93M7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = stepCounterWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -344,6 +482,15 @@
 			buildConfigurations = (
 				5595FC8629EEF16A0087FF74 /* Debug */,
 				5595FC8729EEF16A0087FF74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5595FCC429EF47970087FF74 /* Build configuration list for PBXNativeTarget "stepCounterWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5595FCC229EF47970087FF74 /* Debug */,
+				5595FCC329EF47970087FF74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
