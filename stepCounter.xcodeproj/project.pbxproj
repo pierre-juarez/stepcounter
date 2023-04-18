@@ -11,11 +11,11 @@
 		5595FC7D29EEF1680087FF74 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5595FC7C29EEF1680087FF74 /* ContentView.swift */; };
 		5595FC7F29EEF16A0087FF74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5595FC7E29EEF16A0087FF74 /* Assets.xcassets */; };
 		5595FC8229EEF16A0087FF74 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5595FC8129EEF16A0087FF74 /* Preview Assets.xcassets */; };
-		5595FC8929EEF1EA0087FF74 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5595FC8829EEF1EA0087FF74 /* ViewModel.swift */; };
 		5595FCBA29EF47960087FF74 /* stepCounterWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5595FCB929EF47960087FF74 /* stepCounterWatchApp.swift */; };
 		5595FCBC29EF47960087FF74 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5595FCBB29EF47960087FF74 /* ContentView.swift */; };
 		5595FCBE29EF47970087FF74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5595FCBD29EF47970087FF74 /* Assets.xcassets */; };
 		5595FCC129EF47970087FF74 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5595FCC029EF47970087FF74 /* Preview Assets.xcassets */; };
+		5595FCC829EF4D560087FF74 /* StepCounterModule in Frameworks */ = {isa = PBXBuildFile; productRef = 5595FCC729EF4D560087FF74 /* StepCounterModule */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +24,6 @@
 		5595FC7C29EEF1680087FF74 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5595FC7E29EEF16A0087FF74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5595FC8129EEF16A0087FF74 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		5595FC8829EEF1EA0087FF74 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		5595FC8A29EEF3EE0087FF74 /* stepCounter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = stepCounter.entitlements; sourceTree = "<group>"; };
 		5595FCB729EF47960087FF74 /* stepCounterWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "stepCounterWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5595FCB929EF47960087FF74 /* stepCounterWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stepCounterWatchApp.swift; sourceTree = "<group>"; };
@@ -39,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5595FCC829EF4D560087FF74 /* StepCounterModule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +59,7 @@
 				5595FC7929EEF1680087FF74 /* stepCounter */,
 				5595FCB829EF47960087FF74 /* stepCounterWatch Watch App */,
 				5595FC7829EEF1680087FF74 /* Products */,
+				5595FCC629EF4D3F0087FF74 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,7 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				5595FC8A29EEF3EE0087FF74 /* stepCounter.entitlements */,
-				5595FC8829EEF1EA0087FF74 /* ViewModel.swift */,
 				5595FC7A29EEF1680087FF74 /* stepCounterApp.swift */,
 				5595FC7C29EEF1680087FF74 /* ContentView.swift */,
 				5595FC7E29EEF16A0087FF74 /* Assets.xcassets */,
@@ -111,6 +111,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		5595FCC629EF4D3F0087FF74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -127,6 +134,9 @@
 			dependencies = (
 			);
 			name = stepCounter;
+			packageProductDependencies = (
+				5595FCC729EF4D560087FF74 /* StepCounterModule */,
+			);
 			productName = stepCounter;
 			productReference = 5595FC7729EEF1680087FF74 /* stepCounter.app */;
 			productType = "com.apple.product-type.application";
@@ -212,7 +222,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5595FC7D29EEF1680087FF74 /* ContentView.swift in Sources */,
-				5595FC8929EEF1EA0087FF74 /* ViewModel.swift in Sources */,
 				5595FC7B29EEF1680087FF74 /* stepCounterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,6 +505,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5595FCC729EF4D560087FF74 /* StepCounterModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = StepCounterModule;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5595FC6F29EEF1680087FF74 /* Project object */;
 }
