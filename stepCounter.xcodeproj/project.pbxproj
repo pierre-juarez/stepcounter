@@ -11,6 +11,7 @@
 		5595FC7D29EEF1680087FF74 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5595FC7C29EEF1680087FF74 /* ContentView.swift */; };
 		5595FC7F29EEF16A0087FF74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5595FC7E29EEF16A0087FF74 /* Assets.xcassets */; };
 		5595FC8229EEF16A0087FF74 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5595FC8129EEF16A0087FF74 /* Preview Assets.xcassets */; };
+		5595FC8929EEF1EA0087FF74 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5595FC8829EEF1EA0087FF74 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,8 @@
 		5595FC7C29EEF1680087FF74 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5595FC7E29EEF16A0087FF74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5595FC8129EEF16A0087FF74 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5595FC8829EEF1EA0087FF74 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		5595FC8A29EEF3EE0087FF74 /* stepCounter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = stepCounter.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +54,8 @@
 		5595FC7929EEF1680087FF74 /* stepCounter */ = {
 			isa = PBXGroup;
 			children = (
+				5595FC8A29EEF3EE0087FF74 /* stepCounter.entitlements */,
+				5595FC8829EEF1EA0087FF74 /* ViewModel.swift */,
 				5595FC7A29EEF1680087FF74 /* stepCounterApp.swift */,
 				5595FC7C29EEF1680087FF74 /* ContentView.swift */,
 				5595FC7E29EEF16A0087FF74 /* Assets.xcassets */,
@@ -138,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5595FC7D29EEF1680087FF74 /* ContentView.swift in Sources */,
+				5595FC8929EEF1EA0087FF74 /* ViewModel.swift in Sources */,
 				5595FC7B29EEF1680087FF74 /* stepCounterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +270,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = stepCounter/stepCounter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"stepCounter/Preview Content\"";
@@ -293,6 +300,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = stepCounter/stepCounter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"stepCounter/Preview Content\"";
