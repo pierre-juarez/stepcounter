@@ -16,6 +16,7 @@
 		5595FCBE29EF47970087FF74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5595FCBD29EF47970087FF74 /* Assets.xcassets */; };
 		5595FCC129EF47970087FF74 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5595FCC029EF47970087FF74 /* Preview Assets.xcassets */; };
 		5595FCC829EF4D560087FF74 /* StepCounterModule in Frameworks */ = {isa = PBXBuildFile; productRef = 5595FCC729EF4D560087FF74 /* StepCounterModule */; };
+		5595FCCB29EF53820087FF74 /* StepCounterModule in Frameworks */ = {isa = PBXBuildFile; productRef = 5595FCCA29EF53820087FF74 /* StepCounterModule */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		5595FCBD29EF47970087FF74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5595FCC029EF47970087FF74 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5595FCC529EF49D40087FF74 /* StepCounterModule */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = StepCounterModule; path = ../StepCounterModule; sourceTree = "<group>"; };
+		5595FCC929EF52630087FF74 /* stepCounterWatch Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "stepCounterWatch Watch App.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5595FCCB29EF53820087FF74 /* StepCounterModule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +98,7 @@
 		5595FCB829EF47960087FF74 /* stepCounterWatch Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				5595FCC929EF52630087FF74 /* stepCounterWatch Watch App.entitlements */,
 				5595FCB929EF47960087FF74 /* stepCounterWatchApp.swift */,
 				5595FCBB29EF47960087FF74 /* ContentView.swift */,
 				5595FCBD29EF47970087FF74 /* Assets.xcassets */,
@@ -154,6 +158,9 @@
 			dependencies = (
 			);
 			name = "stepCounterWatch Watch App";
+			packageProductDependencies = (
+				5595FCCA29EF53820087FF74 /* StepCounterModule */,
+			);
 			productName = "stepCounterWatch Watch App";
 			productReference = 5595FCB729EF47960087FF74 /* stepCounterWatch Watch App.app */;
 			productType = "com.apple.product-type.application";
@@ -419,6 +426,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "stepCounterWatch Watch App/stepCounterWatch Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"stepCounterWatch Watch App/Preview Content\"";
@@ -426,6 +434,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = stepCounterWatch;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Hello! We would like to know the number of steps you have walked during the day.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -449,6 +458,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "stepCounterWatch Watch App/stepCounterWatch Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"stepCounterWatch Watch App/Preview Content\"";
@@ -456,6 +466,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = stepCounterWatch;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Hello! We would like to know the number of steps you have walked during the day.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -508,6 +519,10 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		5595FCC729EF4D560087FF74 /* StepCounterModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = StepCounterModule;
+		};
+		5595FCCA29EF53820087FF74 /* StepCounterModule */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = StepCounterModule;
 		};
